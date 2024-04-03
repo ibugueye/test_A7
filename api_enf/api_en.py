@@ -4,7 +4,7 @@ import pandas as pd
 app = Flask(__name__)
 
 # Charger le DataFrame
-df = pd.read_csv("../df_pred.csv")  # Assurez-vous que le chemin vers votre fichier est correct
+df = pd.read_csv("data/df_pred.csv")  # Assurez-vous que le chemin vers votre fichier est correct
 
 @app.route('/get_ids', methods=['GET'])
 def get_ids():
